@@ -23,11 +23,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
   scroll-behavior: smooth;
+  background-color: var(--secondary-color);
 }
 
 .container {
   margin: 0.5rem 2rem;
-  background-color: var(--secondary-color);
 }
 
 header {
@@ -132,4 +132,19 @@ main {
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+@media (max-width: 450px) {
+  header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header a {
+    margin-bottom: 1rem;
+  }
+  .movie {
+    width: 100%;
+  }
 }
